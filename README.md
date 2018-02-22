@@ -3,7 +3,7 @@ Docker Compose with NGINX, Node, PHP-FPM and MYSQL services
 
 ## Installation
 
-##### Clone Repository
+### Clone Repository
 
 Create an empty directory to clone the repo.
 
@@ -15,7 +15,7 @@ mkdir code && cd code
 git clone https://github.com/ghazanfarmir/dockercompose-laravel-nginx.git .
 ```
 
-##### Environment Variables
+### Environment Variables
 
 Copy .env.example to .env and update variables per requirement
 
@@ -39,7 +39,7 @@ DOCUMENT_ROOT=/var/www/html # path to the root within container services e.g. NG
 
 ```
 
-##### Build Images
+### Build Images
 
 Inside the directory you created in above step, build images via docker-compose
 
@@ -56,4 +56,7 @@ docker-compose ps
 Open browser and hit, `http://localhost:9001` and you should see the `phpinfo()` page.
 
 
+## Troubleshooting
+
+ - Make sure there are no containers listening to the ports used with this setup
 
