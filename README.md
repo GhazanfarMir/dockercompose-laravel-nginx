@@ -60,3 +60,4 @@ Open browser and hit, `http://localhost:9001` and you should see the `phpinfo()`
 
  - Make sure there are no containers listening to the ports used with this setup
 
+![phpinf0()](/blob/master/screenshot.png) 
