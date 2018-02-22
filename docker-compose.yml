@@ -36,6 +36,7 @@ services:
       context: ./docker/node
       dockerfile: Dockerfile
     image: gmir/docker-node:latest
+    container_name: node
     volumes:
       - ${APP_PATH}:${DOCUMENT_ROOT}
     networks:
