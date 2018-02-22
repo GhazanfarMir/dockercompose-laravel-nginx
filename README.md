@@ -55,9 +55,9 @@ docker-compose ps
 
 Open browser and hit, `http://localhost:9001` and you should see the `phpinfo()` page.
 
+![alt text](screenshot.png "phpinfo page") 
+
 
 ## Troubleshooting
 
  - Make sure there are no containers listening to the ports used with this setup
-
-![alt text](screenshot.png "phpinfo page") 
