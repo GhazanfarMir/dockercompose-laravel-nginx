@@ -8,8 +8,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 		libfreetype6-dev \
 		libjpeg62-turbo-dev \
 		libpng-dev \
-		ca-certificates \
-		curl \
         wget \
         libldb-dev \
         python \
@@ -21,7 +19,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         libgd2-dev \
         libjpeg-dev \
         libgif-dev \
-        libxml2-dev \
         apt-utils \
         && docker-php-ext-install -j$(nproc) pdo_mysql mysqli pgsql pdo_pgsql \
         && docker-php-ext-install -j$(nproc) sockets pcntl \
@@ -38,3 +35,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         && mv composer.phar /usr/local/bin/composer \
         && chmod +x /usr/local/bin/composer \
         && composer --version
+
+EXPOSE 9000
+CMD ["php-fpm"]
