@@ -1,5 +1,5 @@
 FROM node:latest
 
-MAINTAINER "Ghazanfar Mir" <GhazanfarMir@gmail.com>
+LABEL maintainer="GhazanfarMir@gmail.com"
 
 RUN apt-get install -y git

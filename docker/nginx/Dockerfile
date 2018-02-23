@@ -1,6 +1,6 @@
 FROM nginx
 
-MAINTAINER "Ghazanfar Mir" <GhazanfarMir@gmail.com>
+LABEL maintainer="GhazanfarMir@gmail.com"
 
 RUN apt-get update \
     && apt-get install -y procps vim

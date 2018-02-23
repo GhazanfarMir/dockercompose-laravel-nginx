@@ -1,6 +1,6 @@
 FROM php:7-fpm
 
-MAINTAINER "Ghazanfar Mir" <GhazanfarMir@gmail.com>
+LABEL maintainer="GhazanfarMir@gmail.com"
 
 COPY composer-installer.sh /usr/local/bin/composer-installer
 
