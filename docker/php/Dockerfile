@@ -29,11 +29,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         && pecl install xdebug \
         && docker-php-ext-enable redis xdebug \
         ## Install Composer
-        && chmod +x /usr/local/bin/composer-installer \
-        && sleep 1 \
-        && composer-installer \
-        && mv composer.phar /usr/local/bin/composer \
-        && chmod +x /usr/local/bin/composer \
+        && curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer \
         && composer --version
 
 EXPOSE 9000
