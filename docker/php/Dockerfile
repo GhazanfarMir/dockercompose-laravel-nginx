@@ -2,8 +2,6 @@ FROM php:7-fpm
 
 LABEL maintainer="GhazanfarMir@gmail.com"
 
-COPY composer-installer.sh /usr/local/bin/composer-installer
-
 RUN apt-get update && apt-get install -y --no-install-recommends \
 		libfreetype6-dev \
 		libjpeg62-turbo-dev \
